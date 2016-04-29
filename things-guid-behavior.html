@@ -3,7 +3,7 @@
 window.Things = window.Things || {};
 
 Things.GUIDBehavior = {
-
+  
   _padLeft: function (paddingString, width, replacementChar) {
     return paddingString.length >= width ? paddingString : this._padLeft(replacementChar + paddingString, width, replacementChar || ' ');
   },
@@ -29,7 +29,7 @@ Things.GUIDBehavior = {
   },
 
   /**
-   * GUID 생성
+   * GUID 생성 
    */
   generateGuid: function () {
     var hasCrypto = typeof (window.crypto) != 'undefined',
