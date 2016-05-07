@@ -1,16 +1,16 @@
 {
   "name": "things-id",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     "Hatio Lab. <heartyoh@hatiolab.com>"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "Guid를 생성하는 Behavior.",
   "keywords": [
     "web-component",
     "polymer",
     "seed"
   ],
-  "main": "things-id.html",
+  "main": "elements.html",
   "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/ThingsElements/things-id/",
   "ignore": [
