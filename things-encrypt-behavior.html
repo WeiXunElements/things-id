@@ -1,7 +1,6 @@
 <script src="../crypto-js/crypto-js.js"></script>
 
 <script>
-
 window.Things = window.Things || {};
 
   /**
@@ -11,10 +10,9 @@ window.Things = window.Things || {};
    */
 Things.EncryptBehavior = {
   
-  sha256: function(value, salt) {
-    var hash = CryptoJS.HmacSHA256(value, salt);
-    var encrypted = CryptoJS.enc.Base64.stringify(hash);
-    console.log(encrypted);
+  sha256: function(value) {
+    var hash = CryptoJS.SHA256(value);
+    var encrypted = CryptoJS.enc.Hex.stringify(hash);
     return encrypted;
   }
 
