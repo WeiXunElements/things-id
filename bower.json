@@ -1,6 +1,6 @@
 {
   "name": "things-id",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "authors": [
     "Hatio Lab. <heartyoh@hatiolab.com>"
   ],
@@ -18,7 +18,8 @@
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.2.0"
+    "polymer": "Polymer/polymer#^1.2.0",
+    "crypto-js": "^3.1.6"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

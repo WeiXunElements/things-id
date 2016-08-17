@@ -1,0 +1,23 @@
+<script src="../crypto-js/core.js"></script>
+<script src="../crypto-js/hmac-sha256.js"></script>
+
+<script>
+
+window.Things = window.Things || {};
+
+  /**
+   * 암호화 문자열 생성 behavior 
+   *
+   * @polymerBehavior Things.EncryptBehavior
+   */
+Things.EncryptBehavior = {
+  
+  sha256: function(value, salt) {
+    var hash = CryptoJS.HmacSHA256(value, salt);
+    var encrypted = CryptoJS.enc.Base64.stringify(hash);
+    console.log(encrypted);
+    return encrypted;
+  }
+
+};
+</script>
