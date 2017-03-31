@@ -4,12 +4,12 @@
 window.Things = window.Things || {};
 
   /**
-   * 암호화 문자열 생성 behavior 
-   *
+   * 암호화 문자열 생성 behavior
+   ********
    * @polymerBehavior Things.EncryptBehavior
    */
 Things.EncryptBehavior = {
-  
+
   sha256: function(value) {
     var hash = CryptoJS.SHA256(value);
     var encrypted = CryptoJS.enc.Hex.stringify(hash);
