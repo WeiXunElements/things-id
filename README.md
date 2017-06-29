@@ -1,6 +1,6 @@
 # things-id
 
-## Guid를 생성하는 컴포넌트용 Behavior
+## This is a Behavior for the component of generating Guid.
 
 
 ## Dependencies
