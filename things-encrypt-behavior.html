@@ -1,24 +1,22 @@
 <!--
 @license
-Copyright © HatioLab Inc. All rights reserved.
+Copyright © 2015-2021 Shenzhen Weixun All rights reserved.
 -->
 <script src="../crypto-js/crypto-js.js"></script>
 
 <script>
-window.Things = window.Things || {};
+  window.Things = window.Things || {};
 
   /**
    * 암호화 문자열 생성 behavior
    ********
    * @polymerBehavior Things.EncryptBehavior
    */
-Things.EncryptBehavior = {
-
-  sha256: function(value) {
-    var hash = CryptoJS.SHA256(value);
-    var encrypted = CryptoJS.enc.Hex.stringify(hash);
-    return encrypted;
-  }
-
-};
+  Things.EncryptBehavior = {
+    sha256: function (value) {
+      var hash = CryptoJS.SHA256(value);
+      var encrypted = CryptoJS.enc.Hex.stringify(hash);
+      return encrypted;
+    },
+  };
 </script>
